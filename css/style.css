@@ -1,0 +1,381 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(254, 243, 210);
+    width: 100%;
+    height: 150px;
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-top: 10px;    
+}
+.todosFuimos{
+    color: chocolate;
+    font-family: cursive;
+    text-align: end;
+    justify-items: center;
+    margin-top: 10px;
+    
+
+}
+.navBar{
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+    margin-right: 00px;
+    margin-left: 00px;
+    background-color: chocolate;
+}
+.navBar li{
+    display: flex;
+    list-style: none;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.navBar li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+main{
+    background-color: rgb(254, 243, 210);
+}
+.estamos{
+    background-image: url(../assets/image/foto2section5.png);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+
+}
+h1{
+    padding-right: 25%;
+}
+
+
+
+.consultas{
+    grid-area: consultas;
+    background-color: chocolate;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+.logoMl{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+.logoMp{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+}
+.publisTodas{
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-template-areas: 
+    "publi1 publi2 publi3"
+    ;
+    justify-items: center;
+    align-items: center;
+}
+
+.publi1{
+    grid-area: publi1;
+    border: 5px solid yellow;
+    width: 200px;
+    margin-left: 10px;
+}
+.publi2{
+    grid-area: publi2;
+    border: 5px solid yellow;
+    width: 200px;
+    margin-left: 40px;
+}
+.publi3{
+    grid-area: publi3;
+    border: 5px solid yellow;
+    width: 200px;
+    margin: y 20px x 20px;
+}
+
+
+
+footer{
+    background-color: rgb(254, 243, 210);
+}
+.redes{
+    width: 200px;
+    height: 50px;
+    margin-left: 600px;
+}
+.cubo{
+    width: 80%;
+    height: 80%;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.fondoMain{
+    background-color: white;
+}
+.cuantosMeses{
+    background-color: rgba(255, 255, 107, 0.87);
+    color: black;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 450px;
+}
+.cuboo{
+    width: 30%;
+    height: 30%;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.navCub{
+    display: flex;
+    font-size: 50px;
+    gap: 8px;
+    margin-right: 50px;
+    margin-left: 00px;
+}
+.navCub li{
+    display: flex;
+    list-style: none;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.navCub li a{
+    text-decoration: none;
+    color: black;
+}
+.libros{
+    width: 100%;
+    height: 200px;
+}
+.navLib{
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.navForos{
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.navForos li{
+    display: flex;
+    list-style: none;
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: 20px;
+}
+
+.foto1foro{
+    width: 150px;
+    height: 100px;
+}
+.foto2foro{
+    width: 100px;
+    height: 100px;
+}
+.foto3foro{
+    width: 130px;
+    height: 100px;
+}
+.containerEntrev{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "entrev1 entrev2"
+    "entrev1 entrev3"
+    ;
+}
+.entrev1{
+    grid-area: entrev1;
+}
+.entrev2{
+    grid-area: entrev2;
+}
+.entrev3{
+    grid-area: entrev3;
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .todosFuimos{
+        font-size: 20px;
+        color: chocolate;
+        font-family: cursive;
+        align-items:center center;
+        justify-items: center center;
+        margin-top: px;
+        padding: 45px;
+    }
+
+    .navBar{
+        display: flex;
+        font-size: 20px;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 5px;
+    }
+    .navBar li{
+        margin-left: 50px;
+        margin-right: 5px;
+    }
+    .estamos{
+        background-image: url(../assets/image/m_foto2sectionMQ76888.png);
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+    }
+    footer{
+        background-color: rgb(254, 243, 210);
+        width: 100%;
+    }
+    .redes{
+        margin-left: 300px;
+    }
+    .cuantosMeses{
+        font-size: 22px;
+        width: 100%;
+    }
+    .navCub{
+        display: flex;
+        font-size: 25px;
+        margin-right: 50px;
+        margin-left: 20px;
+        gap: 20px;
+    }
+    .navCub li{
+        display: flex;
+        list-style: none;
+        margin-left: 100px;
+        margin-right: 00px;
+        justify-content: baseline;
+    }
+
+    @media (max-width: 320px){
+        .logo{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            margin-left: 10px;
+            margin-top: 5px; }
+
+        .todosFuimos{
+                font-size: 7px;
+                color: chocolate;
+                font-family: cursive;
+                justify-content: right;    
+        }
+        .navBar{
+            display: flex;
+            font-size: 14px;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 5px;
+        }
+        .navBar li{
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        .estamos{
+            background-image: url(../assets/image/m_foto2sectionMQ320.png);
+            width: 100%;
+            height: 100px;
+            background-repeat: no-repeat;
+            font-size: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            flex-direction: row;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .consultas{
+            grid-area: consultas;
+            background-color: chocolate;
+            color: white;
+            text-align: center;
+            font-size: 20px;}
+        
+        .redes{
+            margin-left: 70px;
+        }
+        .publisTodas{
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            overflow-x: scroll;
+            padding: 10px;
+
+            scroll-snap-type: x mandatory;
+        }
+        .publisTodas article{
+            flex: 0 0 100%;
+            width: 100%;
+            object-fit: cover;
+
+            scroll-snap-align: center;
+        }
+        .cuantosMeses{
+            font-size: 10px;
+            width: 100%;
+            margin-left: 10px;
+        }
+        .navCub{
+            display: flex;
+            font-size: 18px;
+            margin-right: 50px;
+            margin-left: 45px;
+            gap: 20px;
+        }
+        .navCub li{
+            display: flex;
+            list-style: none;
+            margin-left: 10px;
+            margin-right: 00px;
+            justify-content: baseline;
+        }
+        .cubo{
+            width: 70%;
+            height: 70%;
+            margin-top: 30px;
+            margin-left: 42px;
+        }
+        .redes{
+            width: 120px;
+            height: 40px;
+            margin-left: 100px;
+        }
+}
+    }
