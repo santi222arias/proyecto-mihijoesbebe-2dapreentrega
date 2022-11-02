@@ -74,6 +74,7 @@ h1{
     color: white;
     text-align: center;
     font-size: 60px;
+
 }
 .logoMl{
     width: 70px;
@@ -167,6 +168,12 @@ footer{
     text-decoration: none;
     color: black;
 }
+
+.cubo1-3{
+    position: absolute;
+    margin-bottom: 20px;
+
+}
 .libros{
     width: 100%;
     height: 200px;
@@ -221,6 +228,8 @@ footer{
 .entrev3{
     grid-area: entrev3;
 }
+
+
 
 
 
@@ -284,6 +293,18 @@ footer{
         margin-right: 00px;
         justify-content: baseline;
     }
+    .containerEntrev{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "entrev1"
+        "entrev1"
+        "entrev2"
+        "entrev3"
+        ;
+    }
+    
 
     @media (max-width: 320px){
         .logo{
@@ -377,5 +398,44 @@ footer{
             height: 40px;
             margin-left: 100px;
         }
-}
+        .containerEntrev{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+            "entrev1"
+            "entrev1"
+            "entrev2"
+            "entrev3"
+        }
+        .navLib{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .navForos li{
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-areas: 
+        "foto1foro"
+        "foto2foro"
+        "foto3foro"
+        ;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-items: center;
+        }
+    
+        .foto1foro{
+        grid-area: foto1foro;
+        }
+        .foto2foro{
+        grid-area: foto2foro;
+        }
+        .foto3foro{
+        grid-area: foto3foro;
+        }
+        }
     }
