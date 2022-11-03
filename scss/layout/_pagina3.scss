@@ -1,0 +1,18 @@
+.containerEntrev {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "entrev1 entrev2" "entrev1 entrev3";
+    }
+
+    .entrev1 {
+    grid-area: entrev1;
+    }
+
+    .entrev2 {
+    grid-area: entrev2;
+    }
+
+    .entrev3 {
+    grid-area: entrev3;
+    }

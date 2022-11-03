@@ -1,0 +1,140 @@
+@media (max-width: 320px) {
+    .logo {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .todosFuimos {
+        font-size: 7px;
+        color: chocolate;
+        font-family: cursive;
+        justify-content: right;
+    }
+
+    .navBar {
+        display: flex;
+        font-size: 14px;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 5px;
+
+        li {
+        margin-left: 10px;
+        margin-right: 5px;
+        }
+    }
+
+    .estamos {
+        background-image: url(../assets/image/m_foto2sectionMQ320.png);
+        width: 100%;
+        height: 100px;
+        background-repeat: no-repeat;
+        font-size: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .consultas {
+        grid-area: consultas;
+        background-color: chocolate;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .redes {
+        margin-left: 70px;
+    }
+
+    .publisTodas {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        overflow-x: scroll;
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+
+        article {
+        flex: 0 0 100%;
+        width: 100%;
+        object-fit: cover;
+        scroll-snap-align: center;
+        }
+    }
+
+    .cuantosMeses {
+        font-size: 10px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .navCub {
+        display: flex;
+        font-size: 18px;
+        margin-right: 50px;
+        margin-left: 45px;
+        gap: 20px;
+
+        li {
+        display: flex;
+        list-style: none;
+        margin-left: 10px;
+        margin-right: 00px;
+        justify-content: baseline;
+        }
+    }
+
+    .cubo {
+        width: 70%;
+        height: 70%;
+        margin-top: 30px;
+        margin-left: 42px;
+    }
+
+    .redes {
+        width: 120px;
+        height: 40px;
+        margin-left: 100px;
+    }
+
+    .containerEntrev {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "entrev1" "entrev1" "entrev2" "entrev3";
+    }
+
+    .navLib {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .navForos li {
+        display: grid;
+        grid-template-columns: repeat(1);
+        grid-template-areas: "foto1foro" "foto2foro" "foto3foro";
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-items: center;
+    }
+
+    .foto1foro {
+        grid-area: foto1foro;
+    }
+
+    .foto2foro {
+        grid-area: foto2foro;
+    }
+
+    .foto3foro {
+        grid-area: foto3foro;
+    }
+    }
