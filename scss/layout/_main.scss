@@ -41,6 +41,8 @@ main {
     grid-template-areas: "publi1 publi2 publi3";
     justify-items: center;
     align-items: center;
+    justify-content: space-around;
+
     }
 
     .publi1 {
@@ -54,7 +56,7 @@ main {
     grid-area: publi2;
     border: 5px solid yellow;
     width: 200px;
-    margin-left: 40px;
+    margin-left: px;
     }
 
     .publi3 {

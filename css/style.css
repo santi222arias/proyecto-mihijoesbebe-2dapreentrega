@@ -75,7 +75,8 @@ h1 {
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "publi1 publi2 publi3";
   justify-items: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-around; }
 
 .publi1 {
   grid-area: publi1;
@@ -87,7 +88,7 @@ h1 {
   grid-area: publi2;
   border: 5px solid yellow;
   width: 200px;
-  margin-left: 40px; }
+  margin-left: px; }
 
 .publi3 {
   grid-area: publi3;
@@ -128,22 +129,20 @@ footer {
 
 .navCub {
   display: flex;
-  font-size: 50px;
-  gap: 8px;
-  margin-right: 50px;
-  margin-left: 00px; }
+  gap: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
   .navCub li {
     display: flex;
     list-style: none;
-    margin-left: 120px;
-    margin-right: 120px; }
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-items: baseline; }
     .navCub li a {
       text-decoration: none;
       color: black; }
-
-.cubo1-3 {
-  position: absolute;
-  margin-bottom: 20px; }
 
 .containerEntrev {
   display: grid;
@@ -168,7 +167,8 @@ footer {
   display: flex;
   gap: 30px;
   margin-right: 50px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  flex-wrap: wrap; }
 
 .navForos {
   display: flex;
@@ -222,6 +222,13 @@ footer {
     flex-direction: row;
     display: flex;
     justify-content: flex-end; }
+  main {
+    width: 100%; }
+  .publisTodas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px; }
   footer {
     background-color: #fef3d2;
     width: 100%; }
@@ -232,6 +239,7 @@ footer {
     width: 100%; }
   .navCub {
     display: flex;
+    flex-wrap: wrap;
     font-size: 25px;
     margin-right: 50px;
     margin-left: 20px;
@@ -288,17 +296,23 @@ footer {
   .redes {
     margin-left: 70px; }
   .publisTodas {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "publi1" "publi2" "publi3";
     width: 100%;
-    height: 100vh;
-    overflow-x: scroll;
-    padding: 10px;
-    scroll-snap-type: x mandatory; }
+    height: 1000px;
+    padding: 10px; }
     .publisTodas article {
-      flex: 0 0 100%;
+      flex: 0 10 100%;
       width: 100%;
-      object-fit: cover;
-      scroll-snap-align: center; }
+      object-fit: cover; }
+    .publisTodas .publi1 {
+      grid-area: publi1; }
+    .publisTodas .publi2 {
+      grid-area: publi2; }
+    .publisTodas .publi3 {
+      grid-area: publi3; }
   .cuantosMeses {
     font-size: 10px;
     width: 100%;

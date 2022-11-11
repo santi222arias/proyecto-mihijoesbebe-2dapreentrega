@@ -52,18 +52,32 @@
     }
 
     .publisTodas {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "publi1"
+        "publi2"
+        "publi3"
+        ;
         width: 100%;
-        height: 100vh;
-        overflow-x: scroll;
+        height: 1000px;
         padding: 10px;
-        scroll-snap-type: x mandatory;
 
         article {
-        flex: 0 0 100%;
+        flex: 0 10 100%;
         width: 100%;
         object-fit: cover;
-        scroll-snap-align: center;
+        
+        }
+        .publi1 {
+            grid-area: publi1;
+        }
+        .publi2{
+            grid-area: publi2;
+        }
+        .publi3{
+            grid-area: publi3;
         }
     }
 
