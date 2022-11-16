@@ -37,6 +37,8 @@ header {
     .navBar li a {
       text-decoration: none;
       color: white; }
+      .navBar li a:hover {
+        color: lightcoral; }
 
 main {
   background-color: #fef3d2; }
@@ -60,7 +62,8 @@ h1 {
   background-color: chocolate;
   color: white;
   text-align: center;
-  font-size: 60px; }
+  font-size: 60px;
+  animation: color-me-in 0.5s infinite; }
 
 .logoMl, .logoMp {
   width: 70px;
@@ -95,6 +98,14 @@ h1 {
   border: 5px solid yellow;
   width: 200px;
   margin: y 20px x 20px; }
+
+@keyframes color-me-in {
+  /* You could think of as "step 1" */
+  0% {
+    background: orange; }
+  /* You could think of as "step 2" */
+  100% {
+    background: black; } }
 
 footer {
   background-color: #fef3d2; }

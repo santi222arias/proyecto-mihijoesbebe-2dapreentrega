@@ -24,6 +24,10 @@ main {
     color: white;
     text-align: center;
     font-size: 60px;
+    //transition: background-color 0.5s ease;
+    animation: color-me-in 0.5s infinite;
+    
+
     }
 
     .logoMl, .logoMp {
@@ -64,4 +68,14 @@ main {
     border: 5px solid yellow;
     width: 200px;
     margin: y 20px x 20px;
+    }
+    @keyframes color-me-in {
+        /* You could think of as "step 1" */
+        0% {
+        background: orange;
+        }
+        /* You could think of as "step 2" */
+        100% {
+        background: black;
+        }
     }
